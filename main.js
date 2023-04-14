@@ -63,7 +63,7 @@ const checkForWin = () => {
 // When is this function called? What should it do with its argument?
 const towersOfHanoi = (startStack, endStack) => {
   // Check if move is legal
-  if (isLegal()) {
+  if (isLegal(startStack, endStack)) {
     movePiece(startStack, endStack)
     checkForWin()
   }
